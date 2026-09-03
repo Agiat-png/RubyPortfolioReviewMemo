@@ -1,27 +1,29 @@
-# README
+# アプリケーション名（例：感想シェアアプリ / Rails App）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Railsの学習の一環として作成した、読んだ本や映画などの「感想を書き溜める」ためのWebアプリケーションです。
 
-Things you may want to cover:
+## 🛠 使用技術 (Tech Stack)
+- **Backend**: Ruby, Ruby on Rails
+- **Database**: PostgreSQL / SQLite (※使用している方に合わせて変更してください)
+- **Infrastructure / CI/CD**: GitHub Actions
+- **Test**: RTest / RSpec (※使用しているテストツールに合わせて変更してください)
 
-* Ruby version
+## ✨ 主な機能
+- **ユーザー認証機能**: ログイン・ログアウト機能（Devise等を使用）
+- **感想投稿・管理 (CRUD)**: 感想の新規作成、詳細閲覧、編集、削除の基本的なデータ操作が可能
+- **タグ機能**: 投稿にタグを付与して分類・整理ができる機能
+- **「言い値」機能**: 独自のユニークな評価・価格付けができる機能（※特徴的な機能があればここに記載）
 
-* System dependencies
+## 💡 工夫した点・学び
+### 1. Ruby / Ruby on Railsの基礎習得とCRUD実装
+Rubyの基本的な文法やオブジェクト指向の考え方を学びながら、Railsを用いたWebアプリケーション開発の基礎を固めました。データベースとの連携や、データの作成・読み込み・更新・削除（CRUD）の仕組みを実際に手を動かして理解しました。
 
-* Configuration
+### 2. CI/CDと自動テストの導入に挑戦
+開発の効率化と品質担保のため、以下の技術に初めて挑戦・実装しました。
+- **自動テストの実行**: モデルやコントローラーなどのテストコードを書き、挙動が正しいかを検証しました。
+- **CI/CD（GitHub Actions）の構築**: GitHubにコードをプッシュした際に、自動でテストが実行されるパイプラインを構築しました。これにより、デプロイ前の品質チェックを自動化する仕組みを体験しました。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-onfig\master.key
-ddccaba4fa889c6fb7ec1ac140b994da
+## 🚀 今後の展望
+- UI/UXの改善
+- テストカバレッジの向上
+- デプロイ（本番環境への公開）の実施
